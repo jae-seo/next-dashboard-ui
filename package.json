@@ -9,13 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/elements": "^0.23.27",
+    "@clerk/nextjs": "^6.19.4",
+    "@hookform/resolvers": "^5.0.1",
+    "@prisma/client": "^6.7.0",
     "moment": "^2.30.1",
-    "next": "14.2.5",
+    "next": "^15.3.2",
+    "prisma": "^6.7.0",
     "react": "^18",
     "react-big-calendar": "^1.18.0",
     "react-calendar": "^5.1.0",
     "react-dom": "^18",
-    "recharts": "^2.15.3"
+    "react-hook-form": "^7.56.3",
+    "recharts": "^2.15.3",
+    "ts-node": "^10.9.2",
+    "zod": "^3.24.4"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -27,5 +35,8 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJs\"} prisma/seed.ts"
   }
 }
